@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johnathan Ahdout</title>
+<meta name="description" content="Johnathan Ahdout — Mathematics, Princeton University. Research in machine learning, computational biology, and information theory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --text:#111111;
+    --muted:#5b5b5b;
+    --line:#e3e3e3;
+    --link:#111111;
+    --bg:#ffffff;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+  /* Nav */
+  nav{
+    position:sticky; top:0; background:rgba(255,255,255,0.92);
+    backdrop-filter:saturate(180%) blur(6px);
+    border-bottom:1px solid var(--line);
+    z-index:50;
+  }
+  nav .navwrap{
+    max-width:var(--maxw); margin:0 auto; padding:14px 24px;
+    display:flex; flex-wrap:wrap; gap:4px 18px; justify-content:center;
+  }
+  nav a{
+    color:var(--muted); text-decoration:none; font-size:13.5px;
+    letter-spacing:.02em; text-transform:uppercase; font-weight:600;
+    padding:4px 2px; border-bottom:1px solid transparent;
+  }
+  nav a:hover{ color:var(--text); border-bottom-color:var(--text); }
+
+  /* Header */
+  header{ padding:64px 0 40px; text-align:center; }
+  header h1{ font-size:2.1rem; font-weight:700; margin:0 0 6px; letter-spacing:-0.01em; }
+  header p.tagline{ color:var(--muted); font-size:1.05rem; margin:0 0 20px; }
+  .contact-row{
+    display:flex; justify-content:center; flex-wrap:wrap; gap:10px 16px;
+    font-size:14px;
+  }
+  .contact-row a{
+    color:var(--text); text-decoration:none; border-bottom:1px solid var(--line);
+    padding-bottom:1px;
+  }
+  .contact-row a:hover{ border-bottom-color:var(--text); }
+
+  section{ padding:36px 0; border-top:1px solid var(--line); }
+  section:first-of-type{ border-top:none; }
+  h2{
+    font-size:0.78rem; text-transform:uppercase; letter-spacing:.12em;
+    color:var(--muted); font-weight:700; margin:0 0 22px;
+  }
+  h3{ font-size:1.02rem; font-weight:600; margin:0 0 2px; }
+  .meta{ color:var(--muted); font-size:0.88rem; margin:0 0 8px; }
+  .entry{ margin-bottom:28px; }
+  .entry:last-child{ margin-bottom:0; }
+  .entry p{ margin:8px 0 0; }
+  .desc{ color:#333; font-size:0.95rem; }
+  ul.bullets{ margin:8px 0 0; padding-left:20px; color:#333; font-size:0.95rem; }
+  ul.bullets li{ margin-bottom:4px; }
+
+  .tags{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+  .tag{
+    display:inline-block; font-size:12.5px; font-weight:600;
+    color:var(--text); border:1px solid var(--line); border-radius:20px;
+    padding:3px 12px; text-decoration:none; background:#fafafa;
+  }
+  .tag:hover{ background:#111; color:#fff; border-color:#111; }
+  .tag.placeholder{ color:#b3b3b3; border-style:dashed; background:transparent; cursor:default; }
+  .tag.placeholder:hover{ background:transparent; color:#b3b3b3; }
+
+  .badge{
+    display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.03em;
+    text-transform:uppercase; color:#8a5a00; background:#fff3d9; border:1px solid #f0dca8;
+    border-radius:4px; padding:2px 8px; margin-left:8px; vertical-align:middle;
+  }
+
+  .grid-two{ display:grid; grid-template-columns:1fr 1fr; gap:24px 32px; }
+  @media (max-width:640px){ .grid-two{ grid-template-columns:1fr; } }
+
+  .honors-list{ columns:2; column-gap:32px; margin:0; padding-left:18px; color:#333; font-size:0.93rem; }
+  .honors-list li{ break-inside:avoid; margin-bottom:8px; }
+  @media (max-width:640px){ .honors-list{ columns:1; } }
+
+  footer{
+    text-align:center; color:var(--muted); font-size:12.5px;
+    padding:40px 0 60px;
+  }
+
+  .note{
+    font-size:12px; color:#999; margin-top:6px; font-style:italic;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navwrap">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#activities">Activities</a>
+    <a href="#honors">Honors</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header id="about">
+    <h1>Johnathan Ahdout</h1>
+    <p class="tagline">B.A. Mathematics, Princeton University &nbsp;·&nbsp; Class of 2029</p>
+    <p class="tagline" style="margin-top:-14px; font-size:0.95rem;">Machine learning for molecular design &amp; information theory in finance</p>
+    <div class="contact-row">
+      <a href="mailto:ja5615@princeton.edu">Email</a>
+      <a href="https://github.com/JohnathanAhdout" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/johnathanahdout/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" class="cv-link">CV (PDF)</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p class="desc">
+      Hello! My name is Johnathan Ahdout, and I'm a sophomore Mathematics major at Princeton, hoping to
+      minor in Computer Science and Optimisation &amp; Quantitative Decision Sciences. I'm interested in
+      machine learning, computational chemistry, information theory, commodities and energy markets, and
+      quantitative research! Outside of my academic interests, I love puzzlehunts and quiz bowl, plus
+      Pokemon. I'm always down to talk about cool stuff, feel free to email me at
+      ja5615&#91;at&#93;princeton&#91;dot&#93;edu.
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="entry">
+      <h3>SE(3)-Equivariant Diffusion Models for Structure-Based Molecular Generation <span class="badge">1st Place, ACRES Symposium</span></h3>
+      <p class="meta">Dickson Lab, Michigan State University — NSF ACRES REU · May 2026 – Jul 2026</p>
+      <p class="desc">
+        Extended the LEVI molecular generation framework in PyTorch, coupling SE(3)-equivariant graph
+        neural networks with diffusion-model methods to generate chemically valid drug candidates inside
+        protein binding pockets. Developed <strong>ACForce</strong>, a novel graph-connectivity objective
+        based on Laplacian graph theory and Fiedler-score connectivity, increasing molecular connectivity
+        by over 30% (nearly 50% on benchmark drug-like molecule datasets) while preserving molecular
+        quality. Selected as 1 of 10 students from 200+ applicants nationally. First-author on a proof-based
+        diffusion paper (target: JCIM) and second-author on a manuscript in preparation for NeurIPS / ICLR.
+      </p>
+      <div class="tags">
+        <a class="tag" href="acres-reu-2026-poster.pdf" target="_blank" rel="noopener">Poster — MSU Mid-SURE</a>
+        <a class="tag" href="acres-reu-2026-presentation.pptx" target="_blank" rel="noopener">Symposium Slides</a>
+        <a class="tag placeholder">Paper (in prep)</a>
+        <a class="tag placeholder">Code</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h3>Conditional Mutual Information for Screening Point-in-Time Macroeconomic Indicators <span class="badge">Ongoing</span></h3>
+      <p class="meta">Independent Research, Princeton University Department of Mathematics · 2026 – Present</p>
+      <p class="desc">
+        Continuing project extending recent information-theoretic finance literature (Noguer i Alonso,
+        2025) from unconditional to <em>conditional</em> mutual information, in order to test whether a
+        macroeconomic indicator remains informative about future returns once price history and other
+        indicators are already known — a question ordinary correlation and linear regression cannot answer
+        under nonlinear or regime-dependent relationships. Uses a k-nearest-neighbour (Frenzel–Pompe)
+        conditional mutual information estimator with a leakage-safe local permutation significance test,
+        applied to point-in-time indicators from the J.P. Morgan Macrosynergy Quantamental System (JPMaQS).
+        Proposes pooling the estimator's neighbour search across the 20–50 currency areas JPMaQS covers per
+        indicator to offset the estimator's known dimensionality limits, subject to an explicit poolability
+        test, and a first-stage pruning step to keep full-universe conditional testing computationally
+        tractable.
+      </p>
+      <div class="tags">
+        <a class="tag placeholder">Proposal (PDF)</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h3>Contextualising Data-Sparse QSPR Property Prediction with Categorical Representations Built from Variational Autoencoders <span class="badge">Regeneron STS Top 300</span></h3>
+      <p class="meta">Brown Lab, Vanderbilt University Department of Pharmacology · Jun 2023 – Jun 2025</p>
+      <p class="desc">
+        Built graph neural network and variational-autoencoder workflows in PyTorch for computational drug
+        discovery across nearly 2 million drug-like molecules, and protein-dynamics / transfer-learning
+        models achieving 85% predictive accuracy for molecular metabolic stability prediction. Named a
+        Regeneron Science Talent Search 2025 Top 300 Scholar for this work; accepted to the
+        <em>Princeton Undergraduate Research Journal</em> (2026).
+      </p>
+      <div class="tags">
+        <a class="tag placeholder">Princeton Undergraduate Research Journal</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h3>Developing Inhibitory Peptides Against the SARS-CoV-2 Envelope Protein</h3>
+      <p class="meta">Yazawa Lab, Icahn School of Medicine at Mount Sinai · Fall 2023 – Fall 2024</p>
+      <p class="desc">
+        Modelled the SARS-CoV-2 E-protein pentameric structure and candidate inhibitory-peptide interfaces
+        using molecular dynamics, geometric modelling, and energy-minimisation workflows. Co-author on the
+        resulting <em>PLOS Biology</em> publication; also conducted conformational simulation studies on
+        pyruvate/lactate biosensors for structural validation.
+      </p>
+      <div class="tags">
+        <a class="tag placeholder">PLOS Biology</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h3>Tensor Network Algorithms for Quantum Many-Body Dynamics</h3>
+      <p class="meta">Directed Reading, Princeton Department of Physics (with Tian-Hua Yang) · Jan 2026 – Mar 2026</p>
+      <p class="desc">
+        Literature review on non-Hermitian tensor-network DMRG and effective Liouvillian / non-normal
+        operators in open quantum systems, aimed at identifying slow modes, metastability, and long-time
+        relaxation structure. Reproduced and extended Julia workflows in ITensors.jl covering biorthogonal
+        left/right eigensystems, Krylov/Arnoldi spectral targeting, variational sweeps, and adaptive-SVD
+        convergence diagnostics.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <h3>Office Assistant</h3>
+      <p class="meta">Mathey College, Princeton University · Sep 2025 – Present</p>
+      <p class="desc">Front-desk operations for a 600+ student residential college, including scheduling, event support, and administrative coordination; leads communications for the Mathey Mooseletter and Peter S. Firestone Book Fund.</p>
+    </div>
+
+    <div class="entry">
+      <h3>NSF Research Intern — Generative AI for Molecular Design</h3>
+      <p class="meta">Dickson Lab, Michigan State University (ACRES REU) · May 2026 – Jul 2026</p>
+      <p class="desc">See <a href="#research">Research</a> above.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Protein Dynamics &amp; Cheminformatics Research Intern</h3>
+      <p class="meta">Brown Lab, Vanderbilt University Department of Pharmacology · Jun 2023 – Jun 2025</p>
+      <p class="desc">See <a href="#research">Research</a> above.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Structural Biology &amp; Immunology Research Intern</h3>
+      <p class="meta">Yazawa Lab, Icahn School of Medicine at Mount Sinai · Fall 2023 – Fall 2024</p>
+      <p class="desc">See <a href="#research">Research</a> above.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Development &amp; Design Intern, Foldit Education Mode</h3>
+      <p class="meta">Horowitz Lab, University of Denver · Winter 2023 – Spring 2025</p>
+      <p class="desc">Collaborated on a citizen-science protein-biophysics educational game; edited 100+ protein structure files and implemented JavaScript game mechanics (sequence alignment, disulfide bonding). Piloted lessons with five AP Biology classes.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Research &amp; Science Communication Intern</h3>
+      <p class="meta">Science Squad &amp; Columbia Undergraduate Research Journal · Feb 2023 – Sep 2024</p>
+      <p class="desc">Proposed a prime-number-based mutation-detection algorithm for AlphaFold EvoFormer optimisation (finalist, Columbia University Science Journal Fair). Produced STEM communication content for the GameFormuLab YouTube channel.</p>
+    </div>
+
+    <div class="entry">
+      <h3>TV/Film Intern</h3>
+      <p class="meta">Teen TV Internship, North Shore Television · Fall 2022 – Spring 2023</p>
+      <p class="desc">Trained across the live-broadcast pipeline — camera operation, directing, TD panel work, audio/graphics, and floor management; wrote scripts for the weekly "5 o'Clock Live" segment.</p>
+    </div>
+
+    <div class="entry">
+      <h3>STEM Tutor</h3>
+      <p class="meta">Key Club &amp; Tutor Tree · Fall 2021 – Sep 2024</p>
+      <p class="desc">Volunteer and paid tutor in Geometry, Earth Science, AP Biology, AP Chemistry, Algebra II/Trig, and SAT prep.</p>
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <h2>Independent Projects</h2>
+
+    <div class="entry">
+      <h3>SPIRAL: Structured Physics-Informed Representation-Augmented Learning</h3>
+      <p class="meta">Lead Research Developer · Sep 2025 – Jan 2026</p>
+      <p class="desc">
+        Physics-informed multi-hazard forecasting pipeline in PyTorch fusing atmospheric gravity-wave
+        features with real-time USGS/NOAA streams — R² ≈ 0.94, roughly a 54% error reduction versus ARIMA
+        and standard regression baselines. Deployed an end-to-end inference and alerting stack
+        (React/Next.js + Expo) for continuous regional risk scoring. Presented as a poster and working
+        prototype at Princeton Research Day (Feb 2026).
+      </p>
+      <div class="tags">
+        <a class="tag placeholder">Project Repository</a>
+        <a class="tag placeholder">Poster</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h3>GridSmart: Real-Time Grid Optimization &amp; Smart Home Scheduling for Equitable Energy</h3>
+      <p class="meta">Princeton University Claude Builder Club Hackathon · Apr 2026</p>
+      <p class="desc">
+        Real-time ERCOT grid-optimisation dashboard, judged by Princeton ORFE and CS faculty. Ingests
+        hourly settlement-point pricing across 8 Texas load zones, overlays fuel-mix data to compute carbon
+        intensity, and runs a constrained greedy scheduling algorithm to place appliance runtimes within
+        user-defined windows. Integrates Samsung SmartThings and Amazon Alexa APIs for autonomous device
+        control, and includes a per-zone energy-burden analysis identifying where community solar
+        investment would have the highest social impact.
+      </p>
+      <div class="tags">
+        <a class="tag placeholder">GitHub</a>
+        <a class="tag placeholder">Demo Video</a>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h3>Black–Scholes Options Pricing &amp; Risk Analysis Platform</h3>
+      <p class="meta">Python · Jun 2026</p>
+      <p class="desc">
+        Closed-form Black–Scholes pricing for European options with all five Greeks derived analytically,
+        cross-validated against Monte Carlo simulation over 100,000 GBM paths. Newton–Raphson root-finding
+        recovers implied volatility from market prices; live volatility surfaces built from real SPY
+        options-chain data demonstrate the empirical volatility smile the constant-volatility assumption
+        misses. Includes multi-leg strategy payoff diagrams and mark-to-market P&amp;L simulation across
+        300 GBM paths.
+      </p>
+      <div class="tags">
+        <a class="tag placeholder">GitHub</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <h3>Princeton University</h3>
+      <p class="meta">B.A. Mathematics; Minors in Computer Science and Optimization &amp; Quantitative Decision Science · Present – May 2029</p>
+      <p class="desc">GPA: 3.79/4.00. Coursework: Honours Linear Algebra, Single-Variable Real Analysis, Probability Theory, Data Structures &amp; Algorithms, Abstract Algebra, Combinatorics, Multivariable Calculus, Fundamentals of Statistics, Financial Investments &amp; Derivatives.</p>
+    </div>
+
+    <div class="entry">
+      <h3>John L. Miller Great Neck North High School</h3>
+      <p class="meta">High School Diploma · Sep 2021 – Jun 2025</p>
+      <p class="desc">Salutatorian, GPA 97.8/100, SAT 1590 (800 Math, 790 R&amp;W). Departmental Awards: Overall Excellence in Mathematics; Overall Excellence in Computer Science.</p>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2>Activities &amp; Interests</h2>
+    <div class="grid-two">
+      <div>
+        <div class="entry">
+          <h3>Princeton Game Theory Club</h3>
+          <p class="meta">President · Sep 2025 – Present</p>
+          <p class="desc">Organise tournaments on strategic interaction and mechanism design; wrote a LaTeX strategy guide for Fish and won the club's inaugural tournament.</p>
+        </div>
+        <div class="entry">
+          <h3>Princeton Puzzles Club</h3>
+          <p class="meta">Officer &amp; Puzzlehunt Writer/Tester · Sep 2025 – Present</p>
+          <p class="desc">Design and test competition-grade logic puzzles; helped write three puzzles for Princeton Puzzlehunt 2026 (500+ participants).</p>
+        </div>
+        <div class="entry">
+          <h3>Princeton Quiz Bowl</h3>
+          <p class="meta">Team A Competitor · Sep 2025 – Present</p>
+          <p class="desc">Compete in ACF Fall/Winter and IQBT; Top-10 at ACF Winter Regionals. Specialise in computational science, math, physics, and chemistry.</p>
+        </div>
+      </div>
+      <div>
+        <div class="entry">
+          <h3>Princeton Quantitative Traders</h3>
+          <p class="meta">Member · Sep 2025 – Present</p>
+          <p class="desc">Weekly probability, statistical modelling, and quant-finance workshops; trading heuristics for Kelly optimisation and risk-adjusted decision-making.</p>
+        </div>
+        <div class="entry">
+          <h3>Princeton Data Science Club (DataDev)</h3>
+          <p class="meta">Team Member · Sep 2025 – Present</p>
+          <p class="desc">Build reproducible Python pipelines for feature engineering and model evaluation; co-develop peer tutorials on applied ML.</p>
+        </div>
+        <div class="entry">
+          <h3>ACM, Princeton Chapter</h3>
+          <p class="meta">Member &amp; COSCON Competitor · Sep 2025 – Present</p>
+          <p class="desc">Technical talks in cryptography and complexity through the Plaintext group; algorithmic design for COSCON.</p>
+        </div>
+      </div>
+    </div>
+    <p class="desc" style="margin-top:22px;">
+      Previously: founding President of my high school's Science Research Club, President of Science
+      Olympiad and Computer Science Club, and Editor-in-Chief of my school newspaper — plus four years
+      running the TV production crew that filmed districtwide broadcasts.
+    </p>
+  </section>
+
+  <section id="honors">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="honors-list">
+      <li>Regeneron Science Talent Search 2025 — Top 300 National Scholar</li>
+      <li>National Merit $2,500 Scholarship Recipient (2025)</li>
+      <li>U.S. Presidential Scholar Semifinalist (2025)</li>
+      <li>Coca-Cola Scholarship Semifinalist (2025)</li>
+      <li>Hagan Scholarship Finalist (2025)</li>
+      <li>1st Place Presentation, ACRES Symposium (2026)</li>
+      <li>Winner, Inaugural Princeton Game Theory Club Fish Tournament</li>
+      <li>AP Scholar with Distinction (2024, 2025)</li>
+      <li>Great Neck North HS Departmental Awards: Overall Excellence in Mathematics &amp; Computer Science</li>
+      <li>Alan L. Gleitsman Outstanding Graduate Award ($1,500); Frederick Duclos Barstow Award ($500)</li>
+      <li>Co-author, <em>PLOS Biology</em>: "Developing Inhibitory Peptides Against SARS-CoV-2 Envelope Protein"</li>
+      <li>LI Science Congress Distinguished Project + Highest Honours in Biomedical Sciences</li>
+      <li>2× IAC National Science Bee Nationals Qualifier (2024, 2025) — placed 15th and 4th nationally</li>
+      <li>Quiz Bowl NAQT Nationals Qualifier (2024, 2025); Top 10, Princeton A-Team, ACF Winter Regionals</li>
+      <li>International Environmental Science Olympiad (IESO) Qualifier (2024)</li>
+      <li>J.P. Morgan Quantitative Research Job Simulation (Forage)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Johnathan Ahdout &middot; Princeton, NJ &middot; Last updated <span id="year"></span></p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
