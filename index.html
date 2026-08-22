@@ -202,6 +202,7 @@
       <a href="https://github.com/JohnathanAhdout" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/johnathanahdout/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="Johnathan%20Ahdout%20-%20CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      <a href="Johnathan%20Ahdout%20-%20Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
     </div>
   </header>
 
@@ -268,6 +269,13 @@
         indicator to offset the estimator's known dimensionality limits, subject to an explicit poolability
         test, and a first-stage pruning step to keep full-universe conditional testing computationally
         tractable.
+      </p>
+      <p class="desc">
+        Derived the estimator's bias–variance rate and designed the cross-country panel-pooling procedure
+        around it. Also proposing a diffusion-model-based estimator, built on recent score-based
+        mutual-information methods, to admit high-dimensional text embeddings (FOMC statements,
+        earnings-call transcripts) as screening indicators. Working with Macrosynergy quant researchers and
+        Princeton ORFE faculty to develop and publish this.
       </p>
       <div class="tags">
         <a class="tag" href="Johnathan%20Ahdout%20-%20Conditional%20Mutual%20Information%20for%20Screening%20Point-in-Time%20Macroeconomic%20Indicators%20-%20Proposal.pdf" target="_blank" rel="noopener">Proposal (PDF)</a>
@@ -376,15 +384,20 @@
       <div class="thumb" data-full="black-scholes-math.jpg" data-alt="Black-Scholes closed-form price and Greeks used in the platform">
         <img src="black-scholes-math.jpg" alt="Black-Scholes closed-form price and Greeks used in the platform">
       </div>
-      <h3>Black–Scholes Options Pricing &amp; Risk Analysis Platform</h3>
-      <p class="meta">Python · Jun 2026</p>
+      <h3>Options Pricing &amp; Volatility-Trading Research Toolkit</h3>
+      <p class="meta">Python · Jun – Aug 2026</p>
       <p class="desc">
-        Closed-form Black–Scholes pricing for European options with all five Greeks derived analytically,
-        cross-validated against Monte Carlo simulation over 100,000 GBM paths. Newton–Raphson root-finding
-        recovers implied volatility from market prices. Live volatility surfaces built from real SPY
-        options-chain data demonstrate the empirical volatility smile the constant-volatility assumption
-        misses. Includes multi-leg strategy payoff diagrams and mark-to-market P&amp;L simulation across
-        300 GBM paths.
+        Three pricing engines (Black–Scholes, Monte Carlo, CRR binomial tree) behind a shared interface.
+        Benchmarked Newton–Raphson, Brent, and Jaeckel/Halley implied-volatility solvers across 250 cases;
+        Newton diverges on 14.4% of a realistic grid, which motivated using Jaeckel as the default. Derived
+        a closed-form gamma/theta P&amp;L identity from It&ocirc;'s lemma and the Black–Scholes PDE,
+        validated against a simulated self-financing delta-hedge.
+      </p>
+      <p class="desc">
+        Implemented a 2-state Gaussian hidden Markov model from scratch (Baum–Welch EM, Viterbi) to detect
+        volatility regimes and drive a gamma-scalping strategy. Backed by a 97-test suite (pytest) with
+        regressions for bugs found during development, and a live SPY implied-volatility surface exposing
+        the smile that the constant-volatility Black–Scholes assumption misses.
       </p>
       <div class="tags">
         <a class="tag" href="https://github.com/JohnathanAhdout/options-pricing-simulator" target="_blank" rel="noopener">GitHub</a>
