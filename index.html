@@ -332,11 +332,18 @@
       <h3>Quantitative Research Intern, Private Credit <span class="badge">Ongoing</span></h3>
       <p class="meta">Deep Ocean Partners, New York, NY (remote) · Sep 2026 – Present</p>
       <p class="desc">
-        Working under Alexey Loganchuk, the firm's Head of Data Science, on quantitative modelling that
-        supports private-credit underwriting. I build stochastic models of customer behaviour in Python,
-        treating repeat customer activity as a Poisson process, and report results with their uncertainty
-        quantified rather than as point estimates, mostly through recurring presentations. Further detail
-        is covered by an NDA.
+        Working under Alexey Loganchuk, the firm's Head of Data Science, building stochastic models of
+        customer behaviour in Python to support private-credit underwriting. The estimation stack is
+        NumPy, pandas and SciPy, with Bayesian inference in PyMC and posterior diagnostics in ArviZ,
+        sitting behind a tested, configuration-driven interface so the pipeline generalises across
+        datasets rather than being fitted to any one of them.
+      </p>
+      <p class="desc">
+        The part I care most about is that nothing leaves as a bare point estimate. Each quantity is
+        carried through as a posterior with credible intervals, and every specification is graded on
+        held-out data against simpler baselines, so an improvement is something measured rather than
+        asserted. Results go out as recurring presentations and as generated reporting workbooks, which
+        keeps them feeding underwriting decisions directly instead of sitting in a notebook.
       </p>
     </div>
 
